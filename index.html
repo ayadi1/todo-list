@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>todo list</title>
+  </head>
+  <body>
+    <div id="heading" class="box">
+      <h1>TODOLIST</h1>
+    </div>
+    <div class="box">
+      <ul class="items">
+        <div class="item">
+          <button><i class="fa-solid fa-paintbrush"></i></button>
+          <button><i class="fa-solid fa-trash"></i></button>
+          <p>item.body</p>
+        </div>
+      </ul>
+      <form class="item form" id="addForm" method="post">
+        <input
+          type="text"
+          placeholder="item name"
+          name="newValue"
+          autocomplete="off"
+          id="todoValue"
+        />
+        <button type="submit">+</button>
+      </form>
+    </div>
+  </body>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./script.js"></script>
+</html>
+
+<script>
+  //   var inputs = document.querySelectorAll(".input");
+  //   inputs.forEach((input) => {
+  //     input.addEventListener("change", (env) => {
+  //       console.log(env.target.value);
+  //       let form = env.explicitOriginalTarget.parentElement;
+  //       form.submit();
+  //     });
+  //   });
+</script>
